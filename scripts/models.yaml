@@ -1,0 +1,116 @@
+# Maps VNAI Pro Claude model IDs to their Artificial Analysis dataset entries.
+# Each variant's aa_name must match exactly the "name" field in the AA API response.
+# effort: short label used in the README benchmark table (sorted low → max).
+
+models:
+  - id: claude-fable-5-1
+    label: "Fable 5.1"
+    color: "#c07b2a"
+    variants:
+      - aa_name: "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)"
+        effort: "low"
+      - aa_name: "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)"
+        effort: "medium"
+      - aa_name: "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)"
+        effort: "high"
+      - aa_name: "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)"
+        effort: "xhigh"
+      - aa_name: "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)"
+        effort: "max"
+
+  - id: claude-opus-5-5
+    label: "Opus 5.5"
+    color: "#9b4dca"
+    variants:
+      - aa_name: "Claude Opus 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)"
+        effort: "low"
+      - aa_name: "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)"
+        effort: "medium"
+      - aa_name: "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)"
+        effort: "high"
+      - aa_name: "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)"
+        effort: "xhigh"
+      - aa_name: "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)"
+        effort: "max"
+
+  - id: claude-sonnet-5
+    label: "Sonnet 5"
+    color: "#e040b0"
+    variants:
+      - aa_name: "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)"
+        effort: "low"
+      - aa_name: "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)"
+        effort: "medium"
+      - aa_name: "Claude Sonnet 5 (Adaptive Reasoning, High Effort)"
+        effort: "high"
+      - aa_name: "Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)"
+        effort: "xhigh"
+      - aa_name: "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
+
+  - id: claude-haiku-4-5-20251001
+    label: "Haiku 4.5"
+    color: "#4db8e8"
+    variants:
+      - aa_name: "Claude 4.5 Haiku (Non-reasoning)"
+        effort: "non-reasoning"
+      - aa_name: "Claude 4.5 Haiku (Reasoning)"
+        effort: "reasoning"
+
+  - id: claude-fable-5
+    label: "Fable 5"
+    color: "#a06020"
+    variants:
+      - aa_name: "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)"
+        effort: "max"
+
+  - id: claude-opus-5
+    label: "Opus 5"
+    color: "#7b3da8"
+    variants:
+      - aa_name: "Claude Opus 5 (Adaptive Reasoning, Low Effort)"
+        effort: "low"
+      - aa_name: "Claude Opus 5 (Adaptive Reasoning, Medium Effort)"
+        effort: "medium"
+      - aa_name: "Claude Opus 5 (Adaptive Reasoning, High Effort)"
+        effort: "high"
+      - aa_name: "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)"
+        effort: "xhigh"
+      - aa_name: "Claude Opus 5 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
+
+  - id: claude-opus-4-8
+    label: "Opus 4.8"
+    color: "#6b2d98"
+    variants:
+      - aa_name: "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
+
+  - id: claude-opus-4-7
+    label: "Opus 4.7"
+    color: "#5b1d88"
+    variants:
+      - aa_name: "Claude Opus 4.7 (Non-reasoning, High Effort)"
+        effort: "high"
+      - aa_name: "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
+
+  - id: claude-opus-4-6
+    label: "Opus 4.6"
+    color: "#4b0d78"
+    variants:
+      - aa_name: "Claude Opus 4.6 (Non-reasoning, High Effort)"
+        effort: "high"
+      - aa_name: "Claude Opus 4.6 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
+
+  - id: claude-sonnet-4-6
+    label: "Sonnet 4.6"
+    color: "#d030a0"
+    variants:
+      - aa_name: "Claude Sonnet 4.6 (Non-reasoning, Low Effort)"
+        effort: "low"
+      - aa_name: "Claude Sonnet 4.6 (Non-reasoning, High Effort)"
+        effort: "high"
+      - aa_name: "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)"
+        effort: "max"
