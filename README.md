@@ -60,6 +60,30 @@ Or for local development / git clone:
 }
 ```
 
+### OpenCode V2
+
+The package root entrypoint remains the V1 plugin. The V2 plugin lives in `v2/` and can be loaded alongside it:
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    "/absolute/path/to/opencode-vnaipro/v2"
+  ]
+}
+```
+
+For the optional V2 TUI credential toasts, add the package root to `~/.config/opencode/cli.json`:
+
+```json
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "plugins": ["/absolute/path/to/opencode-vnaipro"]
+}
+```
+
+V2 uses native integrations for credentials: `/connect` or `opencode auth login`. Both entrypoints can run from the same checkout.
+
 ---
 
 ## Authentication
