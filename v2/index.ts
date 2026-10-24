@@ -172,6 +172,7 @@ export default Plugin.define({
     await ctx.aisdk.hook("sdk", async (event) => {
       const packageName = (event.model.package ?? event.package).replace(/^aisdk:/, "");
       if (packageName !== VNAIPRO_DEFAULT_NPM) return;
+      if (event.model.providerID !== providerID) return;
 
       const baseURL =
         typeof event.options.baseURL === "string" ? event.options.baseURL : VNAIPRO_DEFAULT_BASE_URL;
